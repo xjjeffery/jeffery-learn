@@ -2,12 +2,12 @@
 site_name: Jeffery's Blog
 site_author: jeffery
 site_dir: site
-site_url: https://xjjeffery.github.io/
+site_url: ""
 use_directory_urls: false
 
 # Repository
-repo_name: xjjeffery/xjjeffery.github.io
-repo_url: https://github.com/xjjeffery/xjjeffery.github.io
+repo_name: jeffery-learn
+repo_url: https://github.com/xjjeffery/jeffery-learn
 
 # Copyright
 copyright: Copyright &copy; 2024 JunXu</br>The website content is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
@@ -158,3 +158,12 @@ extra_javascript:
   # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 nav:
+  - Git 图文教程:
+    - git/introduction.md
+    - git/installation.md
+    - git/getting_started.md
+    - git/branch.md
+    - git/rollback.md
+    - git/flow.md
+    - git/repository.md
+    - git/submodule_guide.md
