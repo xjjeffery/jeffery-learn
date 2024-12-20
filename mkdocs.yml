@@ -158,6 +158,7 @@ extra_javascript:
   # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 nav:
+  - 主页: index.md
   - Git 图文教程:
     - git/introduction.md
     - git/installation.md
