@@ -103,18 +103,18 @@ git config --global https.proxy 'socks5://127.0.0.1:7890'
   s = status -sb
   st = status
   br = branch
-  lg = log --graph --pretty=format:'%C(bold yellow)%h%C(reset) -%C(auto)%d%C(bold reset) %s %C(bold green)(%ad)%C(reset) %C(bold cyan)[%cn]' --abbrev-commit --date=short
+  lg = log --graph --pretty=format:'%C(bold yellow)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%ad)%C(reset) %C(bold cyan)[%cn]' --abbrev-commit --date=short
   type = cat-file -t
   dump = cat-file -p
 [i18n]
   logOutputEncoding = utf-8
   commitEncoding = utf-8
 [core]
- autocrlf = false
- safecrlf = true
- editor = nvim
-[url "https://ghproxy.net/https://github.com/"]
-  insteadOf = https://github.com/
+  autocrlf = false
+  safecrlf = true
+  editor = nvim
+; [url "https://ghproxy.net/https://github.com/"]
+;   insteadOf = https://github.com/
 ; [http]
 ;   proxy = http://127.0.0.1:7890
 ; [https]
