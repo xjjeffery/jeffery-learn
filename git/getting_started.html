@@ -1,0 +1,1142 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="jeffery">
+      
+      
+      
+        <link rel="prev" href="../index.html">
+      
+      
+        <link rel="next" href="common_operator.html">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>使用入门 - Jeffery's Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#使用入门" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Jeffery&#39;s Notes" class="md-header__button md-logo" aria-label="Jeffery's Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Jeffery's Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              使用入门
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="浅色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="浅色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="深色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="深色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/xjjeffery/jeffery-learn" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jeffery-learn
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../index.html" class="md-tabs__link">
+          
+  
+    
+  
+  主页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="getting_started.html" class="md-tabs__link">
+          
+  
+    
+  
+  Git 用法
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Jeffery&#39;s Notes" class="md-nav__button md-logo" aria-label="Jeffery's Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Jeffery's Notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/xjjeffery/jeffery-learn" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jeffery-learn
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../index.html" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Git 用法
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Git 用法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    使用入门
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="getting_started.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    使用入门
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git-配置" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git 配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git 配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#配置文件" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#设置代理" class="md-nav__link">
+    <span class="md-ellipsis">
+      设置代理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#全局配置推荐" class="md-nav__link">
+    <span class="md-ellipsis">
+      全局配置（推荐）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#基本概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#工作区暂存区和仓库之间的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      工作区、暂存区和仓库之间的关系
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#工作流程" class="md-nav__link">
+    <span class="md-ellipsis">
+      工作流程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      .gitignore
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="common_operator.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基本操作
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="branch.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    分支操作
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="commit_history.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    查看提交历史
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="remote_repository.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    远程仓库
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="submodule_guide.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    子模块的使用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#git-配置" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git 配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git 配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#配置文件" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置文件
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#设置代理" class="md-nav__link">
+    <span class="md-ellipsis">
+      设置代理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#全局配置推荐" class="md-nav__link">
+    <span class="md-ellipsis">
+      全局配置（推荐）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#基本概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#工作区暂存区和仓库之间的关系" class="md-nav__link">
+    <span class="md-ellipsis">
+      工作区、暂存区和仓库之间的关系
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#工作流程" class="md-nav__link">
+    <span class="md-ellipsis">
+      工作流程
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      .gitignore
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  <!-- Tags -->
+
+
+<!-- Actions -->
+<!-- Actions -->
+
+
+  <!-- Edit button -->
+  
+
+  <!-- View button -->
+  
+
+
+<!-- Page content -->
+<h1 id="使用入门">使用入门<a class="headerlink" href="#使用入门" title="Permanent link">&para;</a></h1>
+<h2 id="git-配置">Git 配置<a class="headerlink" href="#git-配置" title="Permanent link">&para;</a></h2>
+<h3 id="配置文件">配置文件<a class="headerlink" href="#配置文件" title="Permanent link">&para;</a></h3>
+<p>Git 提供了一个叫做 <code>git config</code> 的命令，用来配置或读取相应的工作环境变量，这些环境变量，决定了 Git 在各个环节的具体工作方式和行为。</p>
+<p>Git 有三个主要的配置文件，分为三个等级，即 <code>system</code>、<code>global</code> 和 <code>local</code>，优先级为: <code>system</code> &lt; <code>global</code> &lt; <code>local</code>。</p>
+<ul>
+<li><code>system</code> 是系统级别的配置，被所有用户共享，优先级最低。在 Ubuntu 系统中，<code>system</code> 级别配置文件位于 <code>/etc/gitconfig</code>，在 Windows 系统中，<code>system</code> 级别配置文件位于自己的安装目录。使用 <code>git config --system</code> 命令可对 <code>system</code> 级配置进行查询和修改。</li>
+<li><code>global</code> 是全局级别的配置，被当前用户所使用。在 Ubuntu 系统中，<code>global</code> 级配置文件位于 <code>${XDG_CONFIG_HOME}/git/config</code> 或 <code>~/.gitconfig</code>（如前者不存在）。如果环境变量 <code>XDG_CONFIG_HOME</code> 未设置或为空值，则默认为 <code>~/.config</code>。在 Windows 系统中，global 级别配置文件位于 <code>C:\Users\&lt;system user_name&gt;\.gitconfig</code>。使用 <code>git config --global</code> 命令可对 global 级别配置进行查询和修改。</li>
+<li><code>local</code> 是仅限某一个 Git 仓库的设置，优先级最高，<code>local</code> 级别配置文件的路径为 <code>&lt;REPO_DIR&gt;/.git/config</code>。使用 <code>git config --local</code> 命令（设置 local 级别选项时可省略 <code>--local</code>）可对 local 级别配置进行查询和修改。</li>
+</ul>
+<p>我们需要配置个人的用户名称和电子邮件地址，为了在每次提交代码时记录提交者的信息，使用如下的命令：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 使用 --global 参数选项设置全局配置的用户名称和电子邮件地址</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;JunXu&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>jeffery.xu.cn@outlook.com
+</code></pre></div>
+<p><strong>仓库配置查询</strong>：仓库里的配置是上面多个配置文件的集合</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>git<span class="w"> </span>config<span class="w"> </span>--list
+user.name<span class="o">=</span>JunXu
+user.email<span class="o">=</span>jeffery.xu.cn@outlook.com
+alias.co<span class="o">=</span>checkout
+alias.ci<span class="o">=</span>commit
+alias.s<span class="o">=</span>status<span class="w"> </span>-sb
+alias.st<span class="o">=</span>status
+alias.br<span class="o">=</span>branch
+alias.lg<span class="o">=</span>log<span class="w"> </span>--graph<span class="w"> </span>--pretty<span class="o">=</span>format:<span class="s1">&#39;%C(bold yellow)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%ad)%C(reset) %C(bold cyan)[%cn]&#39;</span><span class="w"> </span>--abbrev-commit<span class="w"> </span>--date<span class="o">=</span>short
+alias.type<span class="o">=</span>cat-file<span class="w"> </span>-t
+alias.dump<span class="o">=</span>cat-file<span class="w"> </span>-p
+i18n.logoutputencoding<span class="o">=</span>utf-8
+i18n.commitencoding<span class="o">=</span>utf-8
+core.autocrlf<span class="o">=</span><span class="nb">false</span>
+core.safecrlf<span class="o">=</span><span class="nb">true</span>
+core.editor<span class="o">=</span>nvim
+http.proxy<span class="o">=</span>http://127.0.0.1:7890
+https.proxy<span class="o">=</span>https://127.0.0.1:7890
+core.repositoryformatversion<span class="o">=</span><span class="m">0</span>
+core.filemode<span class="o">=</span><span class="nb">false</span>
+core.bare<span class="o">=</span><span class="nb">false</span>
+core.logallrefupdates<span class="o">=</span><span class="nb">true</span>
+core.symlinks<span class="o">=</span><span class="nb">false</span>
+core.ignorecase<span class="o">=</span><span class="nb">true</span>
+remote.origin.url<span class="o">=</span>git@github.com:xjjeffery/jeffery-learn.git
+remote.origin.fetch<span class="o">=</span>+refs/heads/*:refs/remotes/origin/*
+branch.master.remote<span class="o">=</span>origin
+branch.master.merge<span class="o">=</span>refs/heads/master
+</code></pre></div>
+<h3 id="设置代理">设置代理<a class="headerlink" href="#设置代理" title="Permanent link">&para;</a></h3>
+<p>在国内 <code>clone</code> Github 上的项目可能是出现超时，此时需要设置代理才能成功将项目代码拉到本地。Git 支持 SOCKS/HTTP/HTTPS 代理协议，但与大多数终端应用程序不同，我们无法通过设置 Shell 环境变量 <code>HTTP_PROXY</code> 或 <code>HTTPS_PROXY</code> 来让 Git 使用代理。正确的方法是通过 Git 配置选项来设定，例如：</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>http.proxy<span class="w"> </span><span class="s1">&#39;socks5://127.0.0.1:7890&#39;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>https.proxy<span class="w"> </span><span class="s1">&#39;socks5://127.0.0.1:7890&#39;</span>
+</code></pre></div>
+<h3 id="全局配置推荐">全局配置（推荐）<a class="headerlink" href="#全局配置推荐" title="Permanent link">&para;</a></h3>
+<p>此处推荐使用的全局设置（本人常用），为方便操作，对一些常用命令设置了别名，并且规定了换行符在 <code>checkin/checkout</code> 时的转换规则。</p>
+<div class="highlight"><pre><span></span><code><span class="k">[user]</span>
+<span class="w">  </span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jeffery</span>
+<span class="w">  </span><span class="na">email</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">jeffery.xu.cn@outlook.com</span>
+<span class="k">[alias]</span>
+<span class="w">  </span><span class="na">co</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">checkout</span>
+<span class="w">  </span><span class="na">ci</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">commit</span>
+<span class="w">  </span><span class="na">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">status -sb</span>
+<span class="w">  </span><span class="na">st</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">status</span>
+<span class="w">  </span><span class="na">br</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">branch</span>
+<span class="w">  </span><span class="na">lg = log --graph --pretty=format</span><span class="o">:</span><span class="s">&#39;%C(bold yellow)%h%C(reset) -%C(auto)%d%C(reset) %s %C(bold green)(%ad)%C(reset) %C(bold cyan)[%cn]&#39;</span><span class="w"> </span><span class="na">--abbrev-commit --date</span><span class="o">=</span><span class="s">short</span>
+<span class="w">  </span><span class="na">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cat-file -t</span>
+<span class="w">  </span><span class="na">dump</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">cat-file -p</span>
+<span class="k">[i18n]</span>
+<span class="w">  </span><span class="na">logOutputEncoding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">utf-8</span>
+<span class="w">  </span><span class="na">commitEncoding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">utf-8</span>
+<span class="k">[core]</span>
+<span class="w">  </span><span class="na">autocrlf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">false</span>
+<span class="w">  </span><span class="na">safecrlf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+<span class="w">  </span><span class="na">editor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">vim</span>
+<span class="c1">; [url &quot;https://ghproxy.net/https://github.com/&quot;]</span>
+<span class="c1">;   insteadOf = https://github.com/</span>
+<span class="k">[http]</span>
+<span class="w">  </span><span class="na">proxy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">http://127.0.0.1:7890</span>
+<span class="k">[https]</span>
+<span class="w">  </span><span class="na">proxy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://127.0.0.1:7890</span>
+</code></pre></div>
+<p>对于篇幅较长或者对排版有要求的提交信息，很难在命令行直接输入，因此需使用文本编辑器进行撰写。<code>editor</code> 选项指定了用于撰写提交信息的文本编辑器，可根据喜好自行修改。如果 <code>editor</code> 选项未设定，Git 会默认打开由环境变量 <code>${EDITOR}</code> 设定的文本编辑器。</p>
+<p>配置中的倒数 5、6 行意在使用 <code>ghproxy.net</code> 镜像站点来下载 Github 资源。对于任何以 <code>https://github.com/</code> 开头的 URL，Git 会自动将其转换成以 <code>https://ghproxy.net/</code> 开头的镜像地址。例如，<code>https://github.com/foo/bar.git</code> 会被自动转换成 <code>https://ghproxy.net/https://github.com/foo/bar.git</code>。ghproxy 会因访问量太大而暂时无法连接，也可能被一些网关屏蔽而完全无法访问，如果你所处的网络环境允许你畅通无阻地访问 Github，又或者你已使用稳定的代理来访问 Github，那么可注释掉该设定。</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Git 配置文件使用 <code>;</code> 或 <code>#</code> 作为注释起始字符。通常，<code>#</code> 用于描述性文字，<code>;</code> 用于取消选项设定。</p>
+<p>如果需要在 Ubuntu 系统的自带 Terminal 中显示 git 分支信息，可以在 <code>.bashrc</code> 文件中添加如下内容：</p>
+<div class="highlight"><pre><span></span><code>parse_git_branch<span class="o">()</span><span class="w"> </span><span class="o">{</span>
+<span class="w">  </span>git<span class="w"> </span>branch<span class="w"> </span><span class="m">2</span>&gt;<span class="w"> </span>/dev/null<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;/^[^*]/d&#39;</span><span class="w"> </span>-e<span class="w"> </span><span class="s1">&#39;s/* \(.*\)/(\1) /&#39;</span>
+<span class="o">}</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">PS1</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PS1</span><span class="s2">\[\e[91m\]\$(parse_git_branch)\[\e[00m\]\n&gt; &quot;</span>
+</code></pre></div>
+</div>
+<h2 id="基本概念">基本概念<a class="headerlink" href="#基本概念" title="Permanent link">&para;</a></h2>
+<p>在学习 Git 操作之前，首先了解 Git 中的一些常用的基本概念。</p>
+<p>使用 Git 版本管理项目，都要先在项目中初始化一个 Git 仓库，使用命令 <code>git init</code>。执行完成 <code>git init</code> 命令后，Git 仓库会生成一个 <code>.git</code> 目录，该目录包含了资源的所有元数据，其他的项目目录保持不变。或者直接通过 <code>git clone &lt;remote-repo&gt;</code> 的方式将一个现有 Git 仓库拷贝到本地中。</p>
+<p>在 Git 管理的项目中有以下概念需要提前理解：</p>
+<ul>
+<li><strong>本地工作区（workspace）</strong>：宿主机中的某一个由 Git 管理的项目目录</li>
+<li><strong>暂存区（stage 或 index）</strong>：用于临时记录已追踪文件/目录的状态变化和新文件/目录的添加，实际上只是一个文件（<code>.git/index</code>），保存待提交的文件列表信息（暂存区保存了将被包括在下一个提交中的更改），所以我们把暂存区有时也叫作索引</li>
+<li><strong>本地仓库（repository）</strong>：工作区有一个隐藏目录 <code>.git</code>，管理本地项目版本的数据库，记录文件/目录状态的地方，包含项目的所有版本历史记录，可以进行提交、回退等操作</li>
+<li><strong>远程仓库（remote repository）</strong>：服务端的版本仓库，为多人共享提供服务，承担中心服务器的角色，通过 <code>git push</code> 指令将本地版本库推送到服务端版本库，简单理解为在一个公共服务器上的仓库</li>
+<li><strong>分支（branch）</strong>：分支类似一个指针，指向分出时的提交记录。并且可以独立操作而与原分支互不干扰，仓库初始化以后，一般默认主分支为 <code>master</code></li>
+<li><strong>头（HEAD）</strong>：<code>HEAD</code> 类似一个指针，指向仓库当前活动分支的当前所在提交记录（可以在本地提交记录中任意切换）</li>
+<li><strong>版本号</strong>：是由 40 位 sha1 哈希表示，表示某一次的提交记录</li>
+<li><strong>标签（tags）</strong>：是某一个版本号的别名，一旦创建标签，就不能改变这个标签的标记版本，只能进行删除操作</li>
+</ul>
+<h3 id="工作区暂存区和仓库之间的关系">工作区、暂存区和仓库之间的关系<a class="headerlink" href="#工作区暂存区和仓库之间的关系" title="Permanent link">&para;</a></h3>
+<p><a class="glightbox" href="../assets/git/getting_started_1.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/git/getting_started_1.png" /></a></p>
+<p>如上图所示，当对工作区修改（或新增）的文件执行 <code>git add &lt;files&gt;</code> 命令时，暂存区的目录树被更新，同时工作区修改（或新增）的文件内容被写入到对象库中的一个新的对象中，而该对象的 ID 被记录在暂存区的文件索引中。当执行 <code>git commit</code> 时，暂存区的目录树写到版本库（对象库）中，<code>master</code> 分支会做相应的更新，即 <code>master</code> 指向的目录树就是提交时暂存区的目录树，同时也更新 <code>HEAD</code> 的指向为最新的提交记录。</p>
+<p>简单的理解：在工作区中对项目文件或目录进行增删改操作，将这些操作临时放入到暂存区进行管理，可以方式修改操作的失误。再确认修改操作正确后，将暂存临时存放的操作提交到仓库中进行管理，如此就可以在历史提交记录中查看到这一个操作。也可以从历史提交记录中，将某一个提交记录逐步回退到暂存区、工作区。</p>
+<p><a class="glightbox" href="../assets/git/getting_started_2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/git/getting_started_2.png" /></a></p>
+<p>如上图，为对应本地仓库目录的结构关系：</p>
+<ul>
+<li><code>myblogs</code> 为项目目录，也就是 Git 工作区；</li>
+<li>项目根目录下隐藏的 <code>.git</code> 目录就是 Git 仓库目录了，存放了所有 Git 管理的信息；</li>
+<li><code>.git/config</code> 为该仓库的配置文件，可通过指令修改或直接修改；</li>
+<li><code>index</code> 文件就是存放的是暂存区内容。</li>
+</ul>
+<h2 id="工作流程">工作流程<a class="headerlink" href="#工作流程" title="Permanent link">&para;</a></h2>
+<p>Git 管理项目的工作流程有几个核心的步骤，只有熟悉这些步骤，才能避免在多人协作开始的项目中避免出错：</p>
+<ol>
+<li>准备 Git 仓库（<code>git init</code> 或 <code>git clone</code>）：手动创建或从服务端克隆一个仓库；</li>
+<li>编辑：在项目目录中进行添加、修改、删除等操作；</li>
+<li>暂存（<code>git add</code>）：将需要进行版本管理的文件添加到暂存区；</li>
+<li>拉取更新（<code>git fetch/git pull</code>）：如果是多人协作开发，一定要在每次提交之前都要拉取更新，确保在提交之前当前的提交节点是最新的；</li>
+<li>提交（<code>git commit</code>）：将暂存区的文件提交到 Git 仓库，可能会出现冲突，此时需要解决冲突</li>
+<li>合并（<code>git merge</code>）：解决完冲突后直接合并，此时会有一个新的提交记录产生</li>
+<li>推送（<code>git push</code>）：将本地仓库推送到远程仓库，同步本地仓库的提交记录。</li>
+</ol>
+<p>大致的流程如下图所示：</p>
+<p><a class="glightbox" href="../assets/git/getting_started_3.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../assets/git/getting_started_3.png" /></a></p>
+<h2 id="gitignore"><code>.gitignore</code><a class="headerlink" href="#gitignore" title="Permanent link">&para;</a></h2>
+<p>项目目录中的文件并不是全都需要纳入版本管理，如日志、临时文件、私有配置文件等不需要也不能纳入版本管理，那该怎么办呢？在工作区根目录下创建 <code>.gitignore</code> 文件，文件中配置不需要进行版本管理的文件、文件夹。 <code>.gitignore</code> 文件本身是被纳入版本管理的，可以共享。有如下规则：</p>
+<ul>
+<li><code>#</code> 符号开头为注释。</li>
+<li>可以使用 Linux 通配符。<ul>
+<li>星号（<code>*</code>）代表任意多个字符，</li>
+<li>问号（<code>?</code>）代表一个字符，</li>
+<li>方括号（<code>[abc]</code>）代表可选字符范围，</li>
+<li>大括号（<code>{string1,string2,...}</code>）代表可选的字符串等。</li>
+</ul>
+</li>
+<li>感叹号（<code>!</code>）开头：表示例外规则，将不被忽略。</li>
+<li>路径分隔符（<code>/f</code>）开头：<code>,</code> 表示要忽略根目录下的文件f。</li>
+<li>路径分隔符（<code>f/</code>）结尾：<code>,</code> 表示要忽略文件夹f下面的所有文件。</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1"># 为注释</span>
+*.txt<span class="w"> </span><span class="c1"># 忽略所有“.txt”结尾的文件</span>
+!lib.txt<span class="w"> </span><span class="c1"># lib.txt除外</span>
+/temp<span class="w"> </span><span class="c1"># 仅忽略项目根目录下的temp文件,不包括其它目录下的temp，如不包括“src/temp”</span>
+build/<span class="w"> </span><span class="c1"># 忽略build/目录下的所有文件</span>
+doc/*.txt<span class="w"> </span><span class="c1"># 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>各种语言项目的常用 .gitignore 文件配置：<a href="https://github.com/github/gitignore">https://github.com/github/gitignore</a>。</p>
+</div>
+
+<!-- Source file information -->
+
+  
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-17</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-17</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+<!-- Was this page helpful? -->
+
+
+
+
+<!-- Previous and next pages link -->
+<nav
+class="md-footer__inner md-grid"
+aria-label="页脚"
+
+>
+
+<!-- Link to previous page -->
+
+  
+  <a
+    href="../index.html"
+    class="md-footer__link md-footer__link--prev"
+    aria-label="上一页: 欢迎来到我的主页"
+    rel="prev"
+  >
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+    </div>
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        上一页
+      </span>
+      <div class="md-ellipsis">
+        欢迎来到我的主页
+      </div>
+    </div>
+  </a>
+
+
+<!-- Link to next page -->
+
+  
+  <a
+    href="common_operator.html"
+    class="md-footer__link md-footer__link--next"
+    aria-label="下一页: 基本操作"
+    rel="next"
+  >
+    <div class="md-footer__title">
+      <span class="md-footer__direction">
+        下一页
+      </span>
+      <div class="md-ellipsis">
+        基本操作
+      </div>
+    </div>
+    <div class="md-footer__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+    </div>
+  </a>
+
+</nav>
+
+<!-- Comment system -->
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 JunXu</br>The website content is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips", "navigation.indexes", "navigation.prune", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "none"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
