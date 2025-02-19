@@ -165,4 +165,5 @@ nav:
     - git/common_operator.md
     - git/branch.md
     - git/commit_history.md
+    - git/remote_repository.md
     - git/submodule_guide.md
