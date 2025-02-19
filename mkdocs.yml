@@ -160,3 +160,10 @@ extra_javascript:
 nav:
   - 主页:
     - index.md
+  - Git 用法:
+    - git/getting_started.md
+    - git/common_operator.md
+    - git/branch.md
+    - git/commit_history.md
+    - git/remote_repository.md
+    - git/submodule_guide.md
