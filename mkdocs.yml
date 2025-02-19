@@ -164,4 +164,5 @@ nav:
     - git/getting_started.md
     - git/common_operator.md
     - git/branch.md
+    - git/commit_history.md
     - git/submodule_guide.md
