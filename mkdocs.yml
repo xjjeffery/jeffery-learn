@@ -168,4 +168,5 @@ nav:
     - git/remote_repository.md
     - git/submodule_guide.md
   - 杂文:
+    - others/setting_static_ip.md
     - others/install_samba.md
