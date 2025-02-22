@@ -167,3 +167,5 @@ nav:
     - git/commit_history.md
     - git/remote_repository.md
     - git/submodule_guide.md
+  - 杂文:
+    - others/install_samba.md
