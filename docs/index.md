@@ -27,13 +27,13 @@ mindmap
 ## 打赏赞助
 
 <div align='center'>
-  <div style='display: inline-block; margin-right: 10px;'>
-    <img alt='alipay' src='./assets/index/alipay.jpg' width=200 height=200 />
+  <div style='display: inline-block;'>
+    <img alt='alipay' src='./assets/index/alipay.jpg' width=250 height=250 />
     <div>支付宝</div>
   </div>
 
-  <div style='display: inline-block; margin-left: 10px;'>
-    <img alt='wechat' src='./assets/index/wechatpay.jpg' width=200 height=200 />
+  <div style='display: inline-block;'>
+    <img alt='wechat' src='./assets/index/wechatpay.jpg' width=250 height=250 />
     <div>微信</div>
   </div>
 </div>
