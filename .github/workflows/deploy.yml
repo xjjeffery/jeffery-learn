@@ -47,4 +47,4 @@ jobs:
           cd target-repo
           git add .
           git commit -m "finish commit"
-          git push origin master  # 假设目标仓库使用 main 分支
+          git push origin master  # 假设目标仓库使用 master 分支
