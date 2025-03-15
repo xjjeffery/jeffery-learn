@@ -30,14 +30,14 @@ jobs:
 
       - name: Deploy to another repository
         env:
-          DEPLOY_TOKEN: ${{ secrets.mkdocs }}  # 使用 Secrets 中的 PAT
+          DEPLOY_TOKEN: ${{ secrets.MKDOCS }}  # 使用 Secrets 中的 PAT
         run: |
           # 配置 Git 用户信息
           git config --global user.name "jeffery"
           git config --global user.email "jeffery.xu.chn@gmail.com"
 
           # 克隆目标仓库到临时目录
-          git clone https://x-access-token:${mkdocs}@github.com/xjjeffery/xjjeffery.github.io.git target-repo
+          git clone https://x-access-token:${MKDOCS}@github.com/xjjeffery/xjjeffery.github.io.git target-repo
 
           # 清空目标仓库并复制构建好的静态文件
           rm -rf target-repo/*
