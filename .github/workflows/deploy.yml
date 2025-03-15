@@ -28,23 +28,19 @@ jobs:
         run: |
           mkdocs build  # 构建静态文件，输出到 site 目录
 
-      - name: Deploy to another repository
-        env:
-          DEPLOY_TOKEN: ${{ secrets.MKDOCS }}  # 使用 Secrets 中的 PAT
+      - name: Clone destination repository
         run: |
-          # 配置 Git 用户信息
-          git config --global user.name "jeffery"
-          git config --global user.email "jeffery.xu.chn@gmail.com"
-
-          # 克隆目标仓库到临时目录
-          git clone https://x-access-token:${MKDOCS}@github.com/xjjeffery/xjjeffery.github.io.git target-repo
+          git clone https://xjjeffery:${{ secrets.MKDOCS }}@github.com/xjjeffery/xjjeffery.github.io.git destination_repo
 
           # 清空目标仓库并复制构建好的静态文件
-          rm -rf target-repo/*
-          cp -r site/* target-repo/
+          rm -rf destination_repo/*
+          cp -r site/* destination_repo/
 
-          # 提交并推送更改
-          cd target-repo
+      - name: Commit and push changes
+        run: |
+          cd destination_repo
+          git config --local user.email "jeffery"
+          git config --local user.name "jeffery.xu.chn@gmail.com"
           git add .
-          git commit -m "finish commit"
-          git push origin master  # 假设目标仓库使用 master 分支
+          git commit -m "Deploy static site from source repo"
+          git push origin master
