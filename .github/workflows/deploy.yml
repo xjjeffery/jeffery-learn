@@ -2,7 +2,8 @@ name: deploy
 on:
   push:
     branches:
-      - master
+      - dev
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -10,18 +11,40 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up python
+      - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.x
 
       - name: Install dependencies
-      - run: |
+        run: |
           pip install mkdocs
           pip install mkdocs-material
           pip install mkdocs-glightbox
           pip install mkdocs-git-revision-date-localized-plugin
           pip install jieba
 
-      - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+      - name: Build static site
+        run: |
+          mkdocs build  # 构建静态文件，输出到 site 目录
+
+      - name: Deploy to another repository
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # 使用 Secrets 中的 PAT
+        run: |
+          # 配置 Git 用户信息
+          git config --global user.name "jeffery"
+          git config --global user.email "jeffery.xu.chn@gmail.com"
+
+          # 克隆目标仓库到临时目录
+          git clone https://x-access-token:${DEPLOY_TOKEN}@github.com/xjjeffery/xjjeffery.github.io.git target-repo
+
+          # 清空目标仓库并复制构建好的静态文件
+          rm -rf target-repo/*
+          cp -r site/* target-repo/
+
+          # 提交并推送更改
+          cd target-repo
+          git add .
+          git commit -m "Deploy static site from source repo"
+          git push origin master  # 假设目标仓库使用 main 分支
